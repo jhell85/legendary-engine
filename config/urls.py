@@ -22,6 +22,6 @@ vue_urls=[path('', lambda request: HttpResponse(render(request, 'vue_index.html'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('api/', include('api.urls'))
+    path('api/', include('notes.urls')),
     path('', include(vue_urls))
 ]
